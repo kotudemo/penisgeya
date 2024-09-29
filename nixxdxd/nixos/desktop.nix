@@ -48,7 +48,7 @@
         };
         overlays = [ ];                     # overlays in case you have
         system = "x86_64-linux";
-        hostPlatform = lib.mkDefault "x86_64-linux"
+        hostPlatform = lib.mkDefault "x86_64-linux";
 	};
 
 	 environment = {
