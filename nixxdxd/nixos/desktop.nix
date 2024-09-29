@@ -199,13 +199,13 @@
      };
 
      services = {
-		fstrim.enable = true;
-        gvfs.enable = true;
+	fstrim.enable = true;
+	gvfs.enable = true;
         udisks2.enable = true;
-		automatic-timezoned.enable = true;
+	automatic-timezoned.enable = true;
         xserver = {
             enable = true;
-			display = 0;
+	    display = 0;
             videoDrivers = [ "nvidia" ];  
 	        xkb = {
                 layout = "us,ru";
@@ -213,13 +213,13 @@
 	            options = "grp:shift_alt_toggle"; };
         };
         pipewire = {
-	        enable = true;
+		enable = true;
 	        audio.enable = true;
 	        pulse.enable = true;
-            alsa.enable = true;
-            alsa.support32Bit = true;
-		};	
-		printing = {
+            	alsa.enable = true;
+        	alsa.support32Bit = true;
+	};	
+	printing = {
             enable = true;
             drivers = with pkgs; [ canon-cups-ufr2 cups-filters gutenprint ];
             listenAddresses = [
@@ -230,15 +230,11 @@
                 cups
             ];
             webInterface = true;
-		};
+	};
     };
 	programs = {
-		nh = {
-            enable = true;
-            flake = /etc/nixos/;
-        };
-		
-		steam = {
+
+	steam = {
             enable = true;
             remotePlay = {
                 openFirewall = true;
