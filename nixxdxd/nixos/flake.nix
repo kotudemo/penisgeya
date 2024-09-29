@@ -23,9 +23,10 @@
         };
     };
 
-    outputs = inputs@{ self, nixpkgs, home-manager, ... }:
+    outputs = { self, nixpkgs, home-manager, chaotic, ... }@inputs:
+    {
         nixosConfigurations = {
-            goidapc = nixpkgs.lib.nixosSystem {
+            naswayos = nixpkgs.lib.nixosSystem {
                 system = "x86_64-linux";
                 modules = [
                     ./configuration.nix 
@@ -42,5 +43,5 @@
                     ];
                 };
             };
-        };
+    };
 }
