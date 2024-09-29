@@ -23,14 +23,13 @@
         };
     };
 
-    outputs = { self, nixpkgs, home-manager, chaotic, ... }@inputs:
+    outputs = { self, nixpkgs, home-manager, ... }@inputs:
     {
         nixosConfigurations = {
             naswayos = nixpkgs.lib.nixosSystem {
                 system = "x86_64-linux";
                 modules = [
                     ./configuration.nix 
-                    chaotic.nixosModules.default
                 ];
             };
         };
