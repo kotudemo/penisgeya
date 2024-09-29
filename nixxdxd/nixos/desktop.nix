@@ -102,13 +102,7 @@
 				la="eza -a --color=always --group-directories-first --icons";  # all files and dirs
 				ll="eza -l --color=always --group-directories-first --icons";  # long format
 				lt="eza -aT --color=always --group-directories-first --icons"; # tree listing
-				l.="eza -a | grep -e '^\.'";       # show only dotfiles
-				a
-				..="cd ..";
-				...="cd ../..";
-				....="cd ../../..";
-				.....="cd ../../../..";
-				......="cd ../../../../..";
+				lsdot="eza -a | grep -e '^\.'";       # show only dotfiles
 				please="sudo";
 				jctl="journalctl -p 3 -xb";
       	        pf = "clear && nix run nixpkgs#pfetch";
