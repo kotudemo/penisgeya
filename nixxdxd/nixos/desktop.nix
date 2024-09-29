@@ -3,11 +3,7 @@
 { config, lib, inputs, pkgs, overlays, ... }:
 
 {
-      imports = [
 
-      ];
-
-    # Networking
     networking = {
         firewall = { 
             allowPing = true;
