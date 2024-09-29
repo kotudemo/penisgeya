@@ -96,8 +96,6 @@
                 enable = false;
                 settings = {};
             };
-            dynamicBoost = false;
-            forceFullCompositionPipeline = false;
             modesetting.enable = false;
             nvidiaSettings = true;
             open = false;
