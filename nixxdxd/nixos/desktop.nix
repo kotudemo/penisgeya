@@ -7,7 +7,6 @@
 
       ];
 
-    environment.variables = { EDITOR = "vim"; };
     # Networking
     networking = {
         firewall = { 
