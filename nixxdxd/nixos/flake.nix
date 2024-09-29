@@ -34,7 +34,7 @@
             };
         };
             homeConfigurations = {
-                nixuser = home-manager.lib.homeManagerConfiguration {        # hm option goes here, inside your new host directory
+                kd = home-manager.lib.homeManagerConfiguration {        # hm option goes here, inside your new host directory
                     pkgs = nixpkgs.legacyPackages.x86_64-linux;
                     modules = [
                         ./home.nix                              # path to your home-manager configuration, standalone version
