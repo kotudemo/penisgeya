@@ -24,18 +24,15 @@
     };
 
     outputs = inputs@{ self, nixpkgs, home-manager, ... }:
-        let
-            system = "x86_64-linux";
-            pkgs = import nixpkgs { inherit system; };
-        in {
-            nixosConfigurations = {
-                naswayos = nixpkgs.lib.nixosSystem {
-                    specialArgs = { inherit inputs system; };
-                    modules = [
-                        ./configuration.nix
-                    ];
-                };
+        nixosConfigurations = {
+            goidapc = nixpkgs.lib.nixosSystem {
+                system = "x86_64-linux";
+                modules = [
+                    ./configuration.nix 
+                    chaotic.nixosModules.default
+                ];
             };
+        };
             homeConfigurations = {
                 nixuser = home-manager.lib.homeManagerConfiguration {        # hm option goes here, inside your new host directory
                     pkgs = nixpkgs.legacyPackages.x86_64-linux;
