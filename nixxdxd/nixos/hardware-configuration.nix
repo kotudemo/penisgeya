@@ -64,7 +64,7 @@
 		"/mnt/hdd" = {
             device = "/dev/disk/by-label/hdd";
             fsType = "ext4";  
-        }
+        };
         "/boot" = {
             device = "/dev/disk/by-label/boot";
             fsType = "vfat";
