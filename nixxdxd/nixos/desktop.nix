@@ -4,9 +4,8 @@
 
 {
       imports = [
-        # ../desktop.d/de.nix
-   	    ../desktop.d/wm.nix
-    ];
+
+      ];
 
     environment.variables = { EDITOR = "vim"; };
     # Networking
