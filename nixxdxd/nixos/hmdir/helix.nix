@@ -37,8 +37,8 @@
                         mode.insert = "ZHIDKOSRAL";
                         mode.select = "DVASTYLA";
                         left = ["mode", "spinner"];
-                        center = ["read-only-indicator", "file-name"];
-                        right = ["file-type",  "position", "position-percentage", "diagnostics", "file-encoding"];
+                        center = ["read-only-indicator" "file-name"];
+                        right = ["file-type" "position" "position-percentage" "diagnostics" "file-encoding"];
                         separator = "│";
                     };
                 };
